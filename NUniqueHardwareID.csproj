@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <PackageId>LinkDotNet.NUniqueHardwareID</PackageId>
+    <Version>0.5</Version>
+    <Authors>LinkDotNet</Authors>
+    <Product>NUniqueHardwareID</Product>
+    <Description>Creates an unique hardware id</Description>
+    <PackageProjectUrl>https://github.com/linkdotnet/NUniqueHardwareID</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/linkdotnet/NUniqueHardwareID/</RepositoryUrl>
+    <PackageTags>hardwareid unique</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RootNamespace>LinkDotNet.NUniqueHardwareID</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ILGPU" Version="0.3.0" />
+  </ItemGroup>
+
+</Project>

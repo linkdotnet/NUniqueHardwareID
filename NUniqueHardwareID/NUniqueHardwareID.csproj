@@ -1,7 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>LinkDotNet.NUniqueHardwareID</PackageId>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.3</Version>
+    <Authors>LinkDotNet</Authors>
+    <Company>LinkDotNet</Company>
+    <Description>Generates an unique hardware id</Description>
+    <PackageLicenseUrl />
+    <PackageProjectUrl>https://github.com/linkdotnet/NUniqueHardwareID/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/linkdotnet/NUniqueHardwareID/</RepositoryUrl>
+    <PackageTags>hardware id unique hardwareid</PackageTags>
+    <RootNamespace>LinkDotNet.NUniqueHardwareID</RootNamespace>
   </PropertyGroup>
 
 </Project>
