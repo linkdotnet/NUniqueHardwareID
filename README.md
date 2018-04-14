@@ -18,7 +18,7 @@ At the moment the following things are taking into account
     {
         UseCPUInfo = true,
         UseMACAddress = true,
-		UseVolumeInformation = true
+        UseVolumeInformation = true
     };
     
     var hardwareId = hardwareIdGenerator.CalculateHardwareId();
