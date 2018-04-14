@@ -7,10 +7,13 @@ namespace LinkDotNet.NUniqueHardwareID
     public class UniqueHardwareId : IUniqueHardwareId
     {
         /// <inheritdoc/>
-        public bool ShouldUseCPUInfo { get; set; } = true;
+        public bool UseCPUInformation { get; set; } = true;
 
         /// <inheritdoc/>
-        public bool ShouldUseMACAddress { get; set; } = true;
+        public bool UseMACAddress { get; set; } = true;
+
+        /// <inheritdoc/>
+        public bool UseVolumeInformation { get; set; } = true;
 
         /// <inheritdoc/>
         public string CalculateHardwareId()
@@ -21,21 +24,26 @@ namespace LinkDotNet.NUniqueHardwareID
         public string CalculateHardwareId(HashAlgorithm hashAlgorithm)
         {
             //// No work to be done, when every option is turned off
-            if ((ShouldUseCPUInfo ||  ShouldUseMACAddress) == false)
+            if ((UseCPUInformation ||  UseMACAddress || UseVolumeInformation) == false)
             {
                 return null;
             }
 
             var plainHardware = string.Empty;
 
-            if (ShouldUseCPUInfo)
+            if (UseCPUInformation)
             {
                 plainHardware += CPURetriever.GetCPUInfo();
             }
 
-            if (ShouldUseMACAddress)
+            if (UseMACAddress)
             {
                 plainHardware += MACRetriever.GetMACAddressFromPrimaryDevice();
+            }
+
+            if (UseVolumeInformation)
+            {
+                plainHardware += HardDriveId.GetSerialNumber();
             }
             
             return GetHashString(plainHardware, hashAlgorithm);

@@ -7,6 +7,8 @@ At the moment the following things are taking into account
 	 - The first device (which is not the loopback device) MAC-Address is taking into account
  - CPU
 	 - The vendor identifier and the revision is taken
+ - Hard Drive Disk
+	- Information about the primary disk (where windows is installed) are retrieved
 
 ## Sample
 
@@ -14,8 +16,9 @@ At the moment the following things are taking into account
     
     var hardwareIdGenerator = new UniqueHardwareId
     {
-        ShouldUseCPUInfo = true,
-        ShouldUseMACAddress = true
+        UseCPUInfo = true,
+        UseMACAddress = true,
+		UseVolumeInformation = true
     };
     
     var hardwareId = hardwareIdGenerator.CalculateHardwareId();

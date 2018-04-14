@@ -4,15 +4,16 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>LinkDotNet.NUniqueHardwareID</PackageId>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.3</Version>
+    <Version>0.4</Version>
     <Authors>LinkDotNet</Authors>
     <Company>LinkDotNet</Company>
-    <Description>Generates an unique hardware id</Description>
-    <PackageLicenseUrl />
+    <Description>Generates an unique hardware id based on multiple entries (CPU, HDD, MAC-Address)</Description>
+    <PackageLicenseUrl>https://github.com/linkdotnet/NUniqueHardwareID/blob/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://github.com/linkdotnet/NUniqueHardwareID/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/linkdotnet/NUniqueHardwareID/</RepositoryUrl>
     <PackageTags>hardware id unique hardwareid</PackageTags>
     <RootNamespace>LinkDotNet.NUniqueHardwareID</RootNamespace>
+    <PackageReleaseNotes>Added HDD information</PackageReleaseNotes>
   </PropertyGroup>
 
 </Project>
