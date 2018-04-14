@@ -7,7 +7,7 @@ namespace Sample
     internal static class Program
     {
         internal static void Main()
-        {)
+        {
             var hardwareIdGenerator = new UniqueHardwareId();
 
             Console.WriteLine($"Hardware Id MD5: {hardwareIdGenerator.CalculateHardwareId()}");
