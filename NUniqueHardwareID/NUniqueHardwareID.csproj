@@ -4,7 +4,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <PackageId>LinkDotNet.NUniqueHardwareID</PackageId>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>0.4</Version>
+    <Version>0.4.1</Version>
     <Authors>LinkDotNet</Authors>
     <Company>LinkDotNet</Company>
     <Description>Generates an unique hardware id based on multiple entries (CPU, HDD, MAC-Address)</Description>
