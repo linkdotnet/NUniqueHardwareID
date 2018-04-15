@@ -5,7 +5,7 @@ namespace LinkDotNet.NUniqueHardwareID
     /// <summary>
     /// Provides properties and methods to retrieve an unique hardware id
     /// </summary>
-    interface IUniqueHardwareId
+    public interface IUniqueHardwareId
     {
         /// <summary>
         /// Gets or sets whether the CPU is taking into account for calculating the hardware id

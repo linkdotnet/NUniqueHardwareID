@@ -20,7 +20,8 @@ namespace LinkDotNet.NUniqueHardwareID
         {
             return CalculateHardwareId(MD5.Create());
         }
-        
+
+        /// <inheritdoc/>
         public string CalculateHardwareId(HashAlgorithm hashAlgorithm)
         {
             //// No work to be done, when every option is turned off
